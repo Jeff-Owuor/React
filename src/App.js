@@ -1,23 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
+import ContactManager from './ContactManager';
+import TodoHooks from './TodoHooks';
+import TodoManager from './TodoManager';
 
 function App() {
+  let  contacts = ["Mr Umbwaa","Do-Money","Scar-Mkadinali"]
+  let phoneNumber = ['0712347656','01153432122','334139894']
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+           
+           <TodoHooks/>
     </div>
   );
 }
